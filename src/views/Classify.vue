@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <img src="../../static/yian.png" style="width: 100%;max-height: 100%;" alt="">
+  <div class="container">
+    Classify
 
     <tab-bar></tab-bar>
   </div>
@@ -10,20 +10,28 @@
   import TabBar from "@/components/TabBar";
 
   export default {
-    name: 'Home',
+    name: "Classify",
 
     components: {
       TabBar
     },
 
     data() {
-      return {
-        active: 0
-      }
+      return {}
     },
+
+    computed: {},
+
+    created() {
+
+    },
+
+    methods: {},
   }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+  .container {
 
+  }
 </style>
