@@ -1,6 +1,6 @@
 <template>
   <div class="tab-bar">
-    <van-tabbar>
+    <van-tabbar route>
       <van-tabbar-item icon="home-o" to="/">首页</van-tabbar-item>
       <van-tabbar-item icon="search" to="/classify">分类</van-tabbar-item>
       <van-tabbar-item icon="point-gift-o" to="/activity">活动</van-tabbar-item>
@@ -20,8 +20,13 @@
 
     data() {
       return {
+
       }
     },
+
+    created() {
+      console.log(this.$route)
+    }
   }
 </script>
 

@@ -24,8 +24,23 @@ export const menuRouters = [
     path: "/person",
     name: "Person",
     component: () => import("@/views/Person")
+  },{
+    path: "/person/:id",
+    name: "P",
+    component: () => import("@/views/p")
   },
+
+
+  {
+    path: "/zhiHuSwiper",
+    name: "ZhiHuSwiper",
+    component: () => import("@/views/demos/ZhiHuSwiper")
+  },
+
+
+
 ]
 export default new Router({
+  mode: '',
   routes: [...menuRouters]
 });

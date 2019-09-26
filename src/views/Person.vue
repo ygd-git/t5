@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     Person
+    now:{{now}}
 
     <tab-bar></tab-bar>
   </div>
@@ -17,7 +18,9 @@
     },
 
     data() {
-      return {}
+      return {
+        now: new Date(),
+      }
     },
 
     computed: {},

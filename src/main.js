@@ -18,5 +18,9 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   store,
-  render: h => h(App)
+  render: h => h(App),
+  mounted () {
+    // 触发renderAfterDocumentEvent
+    document.dispatchEvent(new Event('render-event'))
+  }
 }).$mount("#app");
